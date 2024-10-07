@@ -21,3 +21,8 @@ header a{
 header a:hover{
 	color: #547494;
 }
+
+.nav-link.active{
+	text-decoration: underline;
+	text-decoration-color: #f48c4c;
+}

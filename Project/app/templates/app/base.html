@@ -4,18 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> {% block title%} {% endblock %} </title>
-  <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+   <link rel="icon" href="{% static 'images/Valenzuela.ico' %}" type="image/x-icon">
+   <title> {% block title%} {% endblock %} </title>
+  <link rel="stylesheet" href="{% static 'css/navbar.css' %}"> 
   {% block stylesheet %} {% endblock %}
-  <link rel="icon" href="{% static 'images/Valenzuela.ico' %}" type="image/x-icon">
 </head>
 <body>
   
 	{% include 'app/navbar.html' %}
 
 	{% block content %}
+  
 	<!--Pages-->	
 	{% endblock content %}
-	<script src="{% static 'js/base' %}"></script>
+	<script src="{% static 'js/base.js' %}"></script>
 </body>
 </html>

@@ -1,7 +1,23 @@
 {% extends 'app/base.html' %}
+{% load static %}
 
 {% block title%} Contact Us {% endblock %}
 
 {% block content%}
-	<h1>Welcome to Contactpage.</h1>
+
+{% block stylsheet%} 
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+{% endblock%}
+
+	<form action="" method="post" class="form-default form-contact">
+		<div class="contact-form">
+			<h1 class="form-tittle">Let's talk.</h1>
+			<input name="contact_name" type="text" id="contact_name" maxlength="50" required placeholder="YOUR NAME*">
+			<input type="email" name="contact_email" id="contact_email" maxlength="100" required placeholder="YOUR EMAIL*">
+			<label for="contact_message">YOUR MESSAGE*</label>
+			<textarea name="contact_message" id="contact_message" required></textarea>
+			<input name="submit" type="submit" value="send">
+		</div>
+	</form>
+	
 {% endblock content%}

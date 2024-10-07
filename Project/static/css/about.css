@@ -3,13 +3,6 @@
   color: black;
 }
 
-h1{
-  font-size: 10vh;
-  padding-left: 4vh;
-  border-bottom: 1px solid #547494;
-  height: 22vh;
+.about-container{
+  letter-spacing: 0.1em;
 }
-
-
-
-

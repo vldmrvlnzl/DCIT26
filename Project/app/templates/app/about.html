@@ -1,10 +1,19 @@
 {% extends 'app/base.html' %}
-
 {% load static %}
 
 {% block title%} About {% endblock %}
 
 
 {% block content%}
-	<h1>Welcome to About page.</h1>
+
+{% block stylsheet%} 
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock%}
+
+	<div class="container">
+		<h1 class="about-container">/About</h1>
+		<p>Hi! I'm Vladimir, an aspiring web developer and I like creating websites that are visually appealing and highly functional. I'm currently at learning phase, but I'm eager to continuous learning and open to new ideas. I'm committed to put an effort to learn and master new skills.</p>
+		<p></p>
+	</div>
+
 {% endblock content%}
