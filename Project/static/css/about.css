@@ -3,6 +3,31 @@
   color: black;
 }
 
+h1{
+  color: #f48c4c;
+}
+
+p{
+  font-size: 2vh;
+  font-weight: 700;
+}
+
 .about-container{
   letter-spacing: 0.1em;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.about-container-info {
+  font-size: 1.2em;
+  line-height: 1.6;
+  white-space: pre-wrap; /* Preserves line breaks and wraps text */
+  max-width: 600px; /* Adjust this value as needed */
+  margin: 0 auto; /* Centers the paragraph */
 }

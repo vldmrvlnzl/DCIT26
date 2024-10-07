@@ -4,10 +4,12 @@
 }
 
 h1{
+  color: #f48c4c;
   font-size: 10vh;
   padding-left: 4vh;
   border-bottom: 1px solid #547494;
   height: 22vh;
+  letter-spacing: 1rem;
 }
 
 
